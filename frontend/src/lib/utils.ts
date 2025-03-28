@@ -1,5 +1,5 @@
 import { Transaction, RecurringExpense } from './types';
-import { format, getDaysInMonth, getDay, addDays, startOfMonth, endOfMonth, eachWeekOfInterval, isSaturday } from 'date-fns';
+import { getDaysInMonth, getDay, startOfMonth, endOfMonth, eachWeekOfInterval, addDays } from 'date-fns';
 
 // Generate a unique ID
 export function generateId(): string {
@@ -50,7 +50,6 @@ export function calculateMonthlySpent(transactions: Transaction[]): number {
 export function calculateRecurringExpenses(recurringExpenses: RecurringExpense[]): number {
     const now = new Date();
     const daysInCurrentMonth = getDaysInMonth(now);
-    const dayOfWeek = getDay(now); // 0-6, 0 is Sunday, 6 is Saturday
 
     // Count Saturdays in current month for weekly expenses
     const saturdays = countSaturdaysInMonth(now);

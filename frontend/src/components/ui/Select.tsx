@@ -30,7 +30,7 @@ const Select = forwardRef<HTMLSelectElement, SelectProps>(
                     </label>
                 )}
                 <select ref={ref} className={combinedClassName} {...props}>
-                    {options.map((option, index) => (
+                    {options.map((option) => (
                         <option
                             key={option.value}
                             value={option.value}

@@ -32,6 +32,9 @@ export function FinanceProvider({ children }: { children: ReactNode }) {
     const [userSettings, setUserSettings] = useState<UserSettings>({
         monthlyBudget: 3000,
         categories: [],
+        currency: 'USD',
+        colorTheme: 'dark',
+        notifications: true,
     });
     const [isInitialized, setIsInitialized] = useState(false);
 

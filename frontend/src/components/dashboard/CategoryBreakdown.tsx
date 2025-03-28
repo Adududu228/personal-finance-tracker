@@ -16,7 +16,7 @@ export default function CategoryBreakdown() {
     const categories = transactions
         .filter(t => t.type === 'expense')
         .reduce((acc, transaction) => {
-            const category = transaction.category;
+            const category = transaction.category || 'Uncategorized';
             if (!acc[category]) {
                 acc[category] = 0;
             }

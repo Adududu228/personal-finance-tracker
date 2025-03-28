@@ -98,7 +98,7 @@ export default function SettingsForm() {
                         placeholder="Housing, Food, Transportation, etc."
                     />
                     <p className="mt-1 text-xs text-gray-500">
-                        Enter categories separated by commas (e.g., "Housing, Food, Transportation").
+                        Enter categories separated by commas (e.g., &quot;Housing, Food, Transportation&quot;).
                     </p>
                 </div>
 

@@ -10,6 +10,9 @@ const USER_SETTINGS_KEY = 'finance_tracker_user_settings';
 const DEFAULT_USER_SETTINGS: UserSettings = {
     monthlyBudget: 3000,
     categories: DEFAULT_CATEGORIES,
+    currency: 'USD',
+    colorTheme: 'dark',
+    notifications: true,
 };
 
 // Get transactions from localStorage

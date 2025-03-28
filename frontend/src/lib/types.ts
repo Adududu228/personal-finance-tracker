@@ -29,4 +29,7 @@ export interface RecurringExpense {
 export interface UserSettings {
     monthlyBudget: number;
     categories: string[];
+    currency?: string;
+    colorTheme?: 'dark' | 'light' | 'blue' | 'purple';
+    notifications?: boolean;
 } 
